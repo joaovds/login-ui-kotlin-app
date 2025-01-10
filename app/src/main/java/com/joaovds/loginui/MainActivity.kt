@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.joaovds.loginui.ui.screen.LoginScreen
+import com.joaovds.loginui.ui.screen.RegistrationScreen
 import com.joaovds.loginui.ui.theme.LoginUITheme
 
 class MainActivity : ComponentActivity() {
@@ -14,8 +14,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             LoginUITheme {
                 // WelcomeScreen()
-                LoginScreen()
-                // RegistrationScreen()
+                // LoginScreen()
+                RegistrationScreen()
             }
         }
     }
