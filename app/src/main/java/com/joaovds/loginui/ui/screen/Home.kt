@@ -23,6 +23,8 @@ import com.joaovds.loginui.ui.theme.PrimaryGreen
 import com.joaovds.loginui.ui.theme.PrimaryGreenDark
 import com.joaovds.loginui.ui.theme.PrimaryPinkDark
 import com.joaovds.loginui.ui.theme.PrimaryViolet
+import com.joaovds.loginui.ui.util.KonfettiUtil
+import nl.dionsegijn.konfetti.compose.KonfettiView
 
 @Composable
 fun HomeScreen(modifier: Modifier = Modifier) {
@@ -54,6 +56,10 @@ fun HomeScreen(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(24.dp)
         )
     }
+    KonfettiView(
+        modifier = Modifier.fillMaxSize(),
+        parties = KonfettiUtil.parade()
+    )
 }
 
 @Composable
