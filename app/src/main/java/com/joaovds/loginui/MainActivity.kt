@@ -15,6 +15,7 @@ class MainActivity : ComponentActivity() {
             LoginUITheme {
                 // WelcomeScreen()
                 LoginScreen()
+                // RegistrationScreen()
             }
         }
     }
