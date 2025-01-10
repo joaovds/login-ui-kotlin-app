@@ -134,7 +134,9 @@ fun AuthenticationScreenTemplate(
             onClick = onSecondaryActionButtonClicked,
             colors = secondaryActionButtonColors,
             shadowColor = secondaryActionButtonShadow,
-            modifier = Modifier.padding(horizontal = 24.dp).padding(bottom = 24.dp)
+            modifier = Modifier
+                .padding(horizontal = 24.dp)
+                .padding(bottom = 24.dp)
         )
     }
 }

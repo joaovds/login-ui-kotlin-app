@@ -27,7 +27,7 @@ import com.joaovds.loginui.ui.util.KonfettiUtil
 import nl.dionsegijn.konfetti.compose.KonfettiView
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
+fun HomeScreen(modifier: Modifier = Modifier, onRestartFlowClicked: () -> Unit) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -47,7 +47,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
         ActionButton(
             text = "Recomeçar",
             isNavigationArrowVisible = false,
-            onClick = {},
+            onClick = onRestartFlowClicked,
             colors = ButtonDefaults.buttonColors(
                 containerColor = PrimaryGreenDark,
                 contentColor = Color.White

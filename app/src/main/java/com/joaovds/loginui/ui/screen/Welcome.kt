@@ -29,7 +29,10 @@ import com.joaovds.loginui.ui.theme.PrimaryYellowDark
 import com.joaovds.loginui.ui.theme.PrimaryYellowLight
 
 @Composable
-fun WelcomeScreen(modifier: Modifier = Modifier) {
+fun WelcomeScreen(
+    modifier: Modifier = Modifier,
+    onOpenLoginClicked: () -> Unit
+) {
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -76,7 +79,7 @@ fun WelcomeScreen(modifier: Modifier = Modifier) {
         ActionButton(
             text = "Próximo",
             isNavigationArrowVisible = true,
-            onClick = {},
+            onClick = onOpenLoginClicked,
             colors = ButtonDefaults.buttonColors(
                 contentColor = DarkTextColor,
                 containerColor = PrimaryYellowDark

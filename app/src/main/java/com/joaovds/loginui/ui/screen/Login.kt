@@ -13,7 +13,9 @@ import com.joaovds.loginui.ui.theme.PrimaryPinkLight
 
 @Composable
 fun LoginScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onLoginClicked: () -> Unit,
+    onRegisterClicked: () -> Unit
 ) {
     AuthenticationScreenTemplate(
         modifier = modifier,
@@ -33,7 +35,7 @@ fun LoginScreen(
         ),
         mainActionButtonShadow = PrimaryPinkDark,
         secondaryActionButtonShadow = PrimaryPinkDark,
-        onMainActionButtonClicked = {},
-        onSecondaryActionButtonClicked = {}
+        onMainActionButtonClicked = onLoginClicked,
+        onSecondaryActionButtonClicked = onRegisterClicked
     )
 }

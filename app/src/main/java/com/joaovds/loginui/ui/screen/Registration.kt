@@ -12,7 +12,11 @@ import com.joaovds.loginui.ui.theme.PrimaryVioletDark
 import com.joaovds.loginui.ui.theme.PrimaryVioletLight
 
 @Composable
-fun RegistrationScreen(modifier: Modifier = Modifier) {
+fun RegistrationScreen(
+    modifier: Modifier = Modifier,
+    onLoginClicked: () -> Unit,
+    onRegisterClicked: () -> Unit
+) {
     AuthenticationScreenTemplate(
         modifier = modifier,
         backgroundGradient = arrayOf(0f to PrimaryViolet, 1f to PrimaryVioletDark),
@@ -31,7 +35,7 @@ fun RegistrationScreen(modifier: Modifier = Modifier) {
         ),
         mainActionButtonShadow = PrimaryPinkDark,
         secondaryActionButtonShadow = PrimaryPinkDark,
-        onMainActionButtonClicked = {},
-        onSecondaryActionButtonClicked = {}
+        onMainActionButtonClicked = onRegisterClicked,
+        onSecondaryActionButtonClicked = onLoginClicked
     )
 }
