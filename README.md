@@ -2,4 +2,4 @@
 
 ![project image cover](./.github/assets/banner.jpg)
 
-![project video](./.github/assets/video.gif)
+<img src="./.github/assets/video.gif" alt="project video" width="300">
