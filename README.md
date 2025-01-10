@@ -2,4 +2,4 @@
 
 ![project image cover](./.github/assets/banner.jpg)
 
-![project video](./.github/assets/video.webm)
+![project video](./.github/assets/video.gif)
