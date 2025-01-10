@@ -5,7 +5,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.joaovds.loginui.ui.screen.LoginScreen
-import com.joaovds.loginui.ui.screen.WelcomeScreen
 import com.joaovds.loginui.ui.theme.LoginUITheme
 
 class MainActivity : ComponentActivity() {

@@ -16,7 +16,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -47,7 +46,9 @@ fun WelcomeScreen(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(R.drawable.img_welcome),
             contentDescription = null,
-            modifier = Modifier.size(300.dp).padding(top = 32.dp)
+            modifier = Modifier
+                .size(300.dp)
+                .padding(top = 32.dp)
         )
         Spacer(
             modifier = Modifier.height(24.dp)
