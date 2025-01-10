@@ -46,7 +46,6 @@ import com.joaovds.loginui.ui.theme.PrimaryPink
 import com.joaovds.loginui.ui.theme.PrimaryPinkBlended
 import com.joaovds.loginui.ui.theme.PrimaryPinkDark
 import com.joaovds.loginui.ui.theme.PrimaryPinkLight
-import com.joaovds.loginui.ui.theme.PrimaryYellowDark
 
 @Composable
 fun LoginScreen(
@@ -101,7 +100,10 @@ fun LoginScreen(
             modifier = Modifier.padding(horizontal = 24.dp)
         )
         Separator(
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 40.dp).height(62.dp)
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 40.dp)
+                .height(62.dp)
         )
         ActionButton(
             text = "Criar Conta",
